@@ -75,8 +75,20 @@
         ele1,ele2....ele n{
              property:value;
         }*/
+
+
         div,span#a1,span.b1,a[href="https://app.netlify.com/sites/cssselctors/overview"]{
             display: inline-block;
+        }
+
+        /*
+        7.pseudoelement  selectors syntax
+        element ::{
+             property:value;
+        }*/
+        
+        h1::after {
+           content: counter(name);
         }
 
     </style>
@@ -86,5 +98,6 @@
      <span id="a1">ID selector</span>
      <span class="b1">class selector</span>
      <a href="https://app.netlify.com/sites/cssselctors/overview">attribute selector</a>
+     <h1>pseudo element selector</h1>
 </body>
 </html>
